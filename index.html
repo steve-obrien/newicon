@@ -26,8 +26,19 @@
             
             .navbar .brand {padding:0px 5px 4px;}
             
-            h1,h2,h3,h4,h5,h6{font-family:helvetica neue;font-weight:normal;}
-            h1.heading {text-transform:uppercase;font-size:37px;}
+            h1,h2,h3,h4,h5,h6{font-family:helvetica neue;font-weight:500;}
+            h1.heading {text-transform:uppercase;font-size:37px;line-height:40px;margin-bottom:20px;letter-spacing:1px;}
+            
+            .hero-unit {padding:60px 0px;background-color:transparent;}
+            .callout{width:400px;}
+            .callout p{font-size:16px;line-height:24px;}
+            
+            .emph{font-family:georgia; font-size:14px;font-style:italic; font-weight:bold;color:#777;}
+            
+            .highlight-boxes{padding:30px;background-color:#F0F0F0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+            .heading-emph {font-size:19.58px;color:#5AAEE1;}
+            
+            footer{background-color:#525251;border-top:4px solid #5BAEE2;}
         </style>
     </head>
     <body>
@@ -47,7 +58,7 @@
                             <img src="images/newicon_logo.png" />
                         </a>
                         <ul class="nav pull-right">
-                            <li class="active"><a href="#">Services</a></li>
+                            <li><a href="#">Services</a></li>
                             <li><a href="#">Our Process</a></li>
                             <li><a href="#">Case Studies</a></li>
                             <li><a href="#">Tech-Talk</a></li>
@@ -69,41 +80,59 @@
             
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
+                <div class="callout">
                 <h1 class="heading">Software That Means Business</h1>
-                <p>We design innovative, user centric applications that help businesses run smoother.</p>
-                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+                <p style="width:350px;">We design innovative, user centric applications that help businesses run smoother.</p>
+                <p class="emph"><a class="">read more...</a></p>
+                    </div>
             </div>
-            
-            
-            
-
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-               </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-            </div>
-
-            <hr>
-
-            <footer>
-                <p>&copy; Company 2012</p>
-            </footer>
 
         </div> <!-- /container -->
-
+        
+        <div class="highlight-boxes">
+            <!-- Example row of columns -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span3">
+                        <a class="heading-emph">System Architecture</a>
+                        <p class="emph">The foundation of good software</p>
+                        <p><a class="btn" href="#">View details &raquo;</a></p>
+                    </div>
+                    <div class="span3">
+                        <a class="heading-emph">Web Apps</a>
+                        <p class="emph">Mobile, tablet and desktop apps</p>
+                        <p><a class="btn" href="#">View details &raquo;</a></p>
+                   </div>
+                    <div class="span3">
+                        <a class="heading-emph">Responsive Websites</a>
+                        <p class="emph">E-commerce, mobile</p>
+                        <p><a class="btn" href="#">View details &raquo;</a></p>
+                    </div>
+                     <div class="span3">
+                        <a class="heading-emph">Our Products</a>
+                        <p class="emph">The foundation of good software</p>
+                        <p><a class="btn" href="#">View details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            
+            Styles!
+            
+            <h1>h1 Heading 1</h1>
+            <h2>h2 Heading 1</h2>
+            
+        </div>
+        
+        
+        <footer>
+            <div class="container">
+                <p>&copy; Company 2012</p>
+            </div>
+        </footer>
       
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
 
