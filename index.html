@@ -16,7 +16,7 @@
 
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
         <style>
-            .container {width:1140px;}
+            .container {}
             
             body {color:#424241;font-family:HelveticaNeueW01-LtExt, Helvetica43-ExtendedLight, arial}
             
@@ -51,6 +51,38 @@ font-family:'HelveticaNeueETW01-55Rg';
 			.feature-image-box {border-right:1px solid #ccc;}
             .feature-image-box .caption{margin-bottom:35px;}
 			.feature-image-box img {display: block;max-width: 100%;margin-right: auto;margin-left: auto;}
+			
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+}
+
+/* Large desktop */
+@media (min-width: 980px) and (max-width: 1200px) { 
+	.navbar .nav li a {padding:25px 15px 15px;}
+	.navbar .navbar-inner{padding-right:0px;}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.navbar .navbar-inner{padding:0px 0px 0px 0px;}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	/* for some reason bootstrap think it sensible to add padding to the body at this point. */
+	body {padding:0px;}
+	.navbar .navbar-inner{padding:0px 0px 0px 0px;}
+	.container {padding:0px 20px}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	/* for some reason bootstrap think it sensible to add padding to the body at this point. */
+	body {background-color:#f99;padding:0px;}
+	.navbar .navbar-inner{padding:0px 0px 0px 0px;}
+	.container {padding:0px 20px}
+}
             
         </style>
         <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/e1c896c2-a59a-4de3-ac45-8ecb88eaa64a.css"/>
@@ -61,44 +93,57 @@ font-family:'HelveticaNeueETW01-55Rg';
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
         <header>
             <div style="height:4px;background-color:#5BAEE2;"></div>
-            
+				
+				
+				
             <div class="container">
-
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <a class="brand newicon-logo" href="/" style="background-color:#5BAEE2;">
-                            <img src="images/newicon_logo.png" />
-                        </a>
-                        <ul class="nav pull-right">
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="#">Our Process</a></li>
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Tech-Talk</a></li>
-                            <li><a href="#">The Team</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-
+				
+				
+				<div class="navbar ">
+					
+					
+					
+					<div class="navbar-inner">
+						<a class="brand newicon-logo" href="/" style="background-color:#5BAEE2;">
+							<img src="images/newicon_logo.png" />
+						</a>
+						
+						<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+						<a class="btn btn-navbar btn-inverse" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<!--Everything you want hidden at 940px or less, place within here--> 
+						<div class="nav-collapse">
+							<ul class="nav pull-right">
+								<li><a href="./services.html">Services</a></li>
+								<li><a href="#">Our Process</a></li>
+								<li><a href="#">Case Studies</a></li>
+								<li><a href="#">Tech-Talk</a></li>
+								<li><a href="#">The Team</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+									
+					
             </div>
-            
+				
         </header>
 
 
         <div class="container">
-
-            
-            
             
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
                 <div class="callout">
                     <h1 class="heading">Software That Means Business</h1>
                     <p style="width:350px;">We design innovative, user centric applications that help businesses run smoother.</p>
-                    <p class="emph"><a class="">read more...</a></p>
+                    <p class="emph"><a href="#" class="">read more...</a></p>
                 </div>
             </div>
 
@@ -168,11 +213,8 @@ font-family:'HelveticaNeueETW01-55Rg';
         </footer>
       
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
-
 
     </body>
 </html>
