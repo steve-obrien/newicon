@@ -9,82 +9,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="css/newicon.css">
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-        <style>
-            .container {}
-            
-            body {color:#424241;font-family:HelveticaNeueW01-LtExt, Helvetica43-ExtendedLight, arial}
-            
-            .logo {}
-            .navbar .navbar-inner{border:0px;background-color:transparent;box-shadow:none;background-image:none;}
-            .navbar .nav li a {text-transform:uppercase;padding:25px 25px 15px;font-family:Helvetica43-ExtendedLight, arial}
-            
-            .navbar .brand {padding:0px 5px 4px;}
-            
-            h1,h2,h3,h4,h5,h6{font-family:helvetica neue;font-weight:500;}
-            h1.heading {text-transform:uppercase;font-size:37px;line-height:40px;margin-bottom:20px;letter-spacing:1px;}
-            
-            .hero-unit {padding:60px 0px;background-color:transparent;}
-            .callout{width:400px;}
-            .callout p{font-size:16px;line-height:24px;letter-spacing:1px;}
-            
-            .emph{font-family:georgia; font-size:14px;font-style:italic;color:#777;}
-            
-            .highlight-boxes{padding:30px;background-color:#F0F0F0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
-            .heading-emph {font-size:19.58px;color:#5AAEE1;}
-            
-            footer{background-color:#525251;border-top:4px solid #5BAEE2;}
-			
-            /**
-            
-font-family:'Helvetica W01 Blk';
-font-family:'HelveticaNeueW01-LtExt';
-font-family:'HelveticaNeueW01-LtExtO';
-font-family:'HelveticaNeueETW01-45Lt';
-font-family:'HelveticaNeueETW01-55Rg';
-            */
-			.feature-image-box {border-right:1px solid #ccc;}
-            .feature-image-box .caption{margin-bottom:35px;}
-			.feature-image-box img {display: block;max-width: 100%;margin-right: auto;margin-left: auto;}
-			
-/* Large desktop */
-@media (min-width: 1200px) { 
-
-}
-
-/* Large desktop */
-@media (min-width: 980px) and (max-width: 1200px) { 
-	.navbar .nav li a {padding:25px 15px 15px;}
-	.navbar .navbar-inner{padding-right:0px;}
-}
- 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-	.navbar .navbar-inner{padding:0px 0px 0px 0px;}
-}
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-	/* for some reason bootstrap think it sensible to add padding to the body at this point. */
-	body {padding:0px;}
-	.navbar .navbar-inner{padding:0px 0px 0px 0px;}
-	.container {padding:0px 20px}
-}
- 
-/* Landscape phones and down */
-@media (max-width: 480px) { 
-	/* for some reason bootstrap think it sensible to add padding to the body at this point. */
-	body {background-color:#f99;padding:0px;}
-	.navbar .navbar-inner{padding:0px 0px 0px 0px;}
-	.container {padding:0px 20px}
-}
-            
-        </style>
         <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/e1c896c2-a59a-4de3-ac45-8ecb88eaa64a.css"/>
         <script type="text/javascript" src="http://fast.fonts.com/jsapi/e1c896c2-a59a-4de3-ac45-8ecb88eaa64a.js"></script>
     </head>
@@ -93,53 +21,10 @@ font-family:'HelveticaNeueETW01-55Rg';
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <header>
-            <div style="height:4px;background-color:#5BAEE2;"></div>
-				
-				
-				
-            <div class="container">
-				
-				
-				<div class="navbar ">
-					
-					
-					
-					<div class="navbar-inner">
-						<a class="brand newicon-logo" href="/" style="background-color:#5BAEE2;">
-							<img src="images/newicon_logo.png" />
-						</a>
-						
-						<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-						<a class="btn btn-navbar btn-inverse" data-toggle="collapse" data-target=".nav-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</a>
-						<!--Everything you want hidden at 940px or less, place within here--> 
-						<div class="nav-collapse">
-							<ul class="nav pull-right">
-								<li><a href="./services.html">Services</a></li>
-								<li><a href="#">Our Process</a></li>
-								<li><a href="#">Case Studies</a></li>
-								<li><a href="#">Tech-Talk</a></li>
-								<li><a href="#">The Team</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-									
-            </div>
-				
-        </header>
-
+		<?php include '_header.php'; ?>
 
         <div class="container">
 
-            
-            
-            
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
                 <div class="callout">
