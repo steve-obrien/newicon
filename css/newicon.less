@@ -1,0 +1,84 @@
+@brand-color: #4D99CD;
+@hover-color: #4EACE0; //4D99CD;
+
+html {font-size: 62.5%;}
+body {background-color:#fff;font-family:HelveticaNeueW01-LtExt, arial;letter-spacing:1px;font-size:1.4rem}
+a:hover {color:@hover-color}
+body, h2 a {color:#424241;}
+
+/** header **/
+.head-stripe {height:5px;background-color:@brand-color;}
+.newicon-logo {background-color:@brand-color;}
+.navbar .newicon-logo {margin-right:145px;}
+.navbar .navbar-inner {border:0;background-color:transparent;box-shadow:none;background-image:none;}
+.navbar .nav li a {letter-spacing: 1px;color:#000;font-size:12px;font-size:1.2rem;text-transform:uppercase;padding:25px 25px 15px;}
+.navbar .brand {padding:0 5px 4px;}
+.navbar .nav>li>a:focus, .navbar .nav>li>a:hover {color:@hover-color}
+.navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus, .navbar .nav>.active>a {
+	color:@hover-color;text-decoration: none;background-color: transparent;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;
+}
+.navbar .nav>.active>a {
+	color: @brand-color;text-decoration: none;background-color: transparent;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;
+}
+
+/* Text Styles */
+h1,h2,h3,h4,h5,h6 {font-family:HelveticaNeueW01-LtExt;text-transform:uppercase;letter-spacing:2px;font-weight: 100;}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {text-decoration: none;}
+
+// .heading {text-transform:uppercase;font-size:37px;font-size:3.7rem;line-height:40px;margin-bottom:20px;}
+
+h1, .h1 {font-size:31px;font-size:3.1rem;letter-spacing:3px;letter-spacing:0.3rem;}
+h2, .h2 {font-size: 23.5px;font-size:2.35rem;}
+h3, .h3 {font-size: 22px;font-size:2.2rem;}
+h4 .h4 {font-size:17.5;font-size:1.75rem;}
+
+/* used for main home page message. Big bold n black */
+.impact, .hero-unit h1 {font-weight:normal;font-size:35px;font-size:3.5rem;font-family: "Helvetica W01 Blk";margin-bottom:10px;letter-spacing:0;text-transform:none;}
+.impact-sub {font-family: HelveticaNeueW01-LtExt;font-size: 19px;font-size:1.9rem;text-transform: uppercase;color: #636363;letter-spacing: 2px;}
+
+/* should probably replace these with more accurate images. As close as we can get using css */
+.impact-huge {margin:100px 0px 50px;line-height:5.8rem;font-weight: normal;font-size: 58px;font-size:5.8rem;font-family: "Helvetica W01 Blk";letter-spacing: 0;text-transform: uppercase;color: #4EACE0;background-color: #008DC6;color: transparent;text-shadow: 0 3px 6px rgba(191, 230, 252, 0.4);-webkit-background-clip: text;-moz-background-clip: text;background-clip: text;}
+.page-title{margin:100px 0px 50px 0px;}
+/* @end */
+
+
+
+
+.hero-unit {padding:60px 0;background-color:transparent;}
+.vflow {margin-bottom:120px;}
+
+
+.big-foot {background-color:#464547;border-top:4px solid #5BAEE2;}
+			
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+}
+
+/* Large desktop */
+@media (min-width: 980px) and (max-width: 1200px) { 
+	.navbar .newicon-logo{margin-right:40px;}
+	.navbar .nav li a {padding:25px 15px 15px;}
+	.navbar .navbar-inner{padding-right:0;}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.navbar .navbar-inner{padding:0;}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	/* for some reason bootstrap think it sensible to add padding to the body at this point. */
+	body {padding:0;}
+	.navbar .navbar-inner{padding:0;}
+	.container {padding:0 20px}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	/* for some reason bootstrap think it sensible to add padding to the body at this point. */
+	body {background-color:#f99;padding:0;}
+	.navbar .navbar-inner{padding:0;}
+	.container {padding:0 20px}
+}
