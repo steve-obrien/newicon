@@ -1,13 +1,17 @@
 <?php
 
-function content(){
+function getPath() {
+	return dirname(__FILE__);
+}
+
+function content() {
 	ob_start();
 	ob_implicit_flush(false);
 }
 
-function contentEnd(){
+function contentEnd() {
 	$content = ob_get_clean();
-	include 'layout.php';
+	include getPath() . '/../layout.php';
 }
 
 /**
@@ -17,7 +21,6 @@ function contentEnd(){
  * @return string link
  */
 function active($url, $class='') {
-
    if (basename($_SERVER['SCRIPT_NAME']) == basename($url))
 	   $class = ($class=='') ? 'active' : ' active';
    echo "class=\"$class\"";
