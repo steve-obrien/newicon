@@ -1,15 +1,18 @@
 <?php
 
-function getPath() {
+function getPath() 
+{
 	return dirname(__FILE__);
 }
 
-function content() {
+function content() 
+{
 	ob_start();
 	ob_implicit_flush(false);
 }
 
-function contentEnd() {
+function contentEnd() 
+{
 	$content = ob_get_clean();
 	include getPath() . '/../layout.php';
 }
